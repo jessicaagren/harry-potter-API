@@ -1,4 +1,4 @@
-export type HPCharacter = {
+export type Character = {
     id: string;
     name: string;
     alternate_names: string[];
