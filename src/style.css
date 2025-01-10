@@ -1,8 +1,24 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   background-color: midnightblue;
   color:bisque;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+article {
+  background-color: lightslategray;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
 }
