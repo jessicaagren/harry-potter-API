@@ -24,3 +24,7 @@ export type HPCharacter = {
     alive: boolean;
     image: string;
   }
+
+  export type CharacterCategories = `students` | `staff`;
+
+  export type Houses = `gryffindor` | `hufflepuff` | `ravenclaw` | `slytherin`;
