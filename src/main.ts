@@ -80,11 +80,11 @@ const DOMCharactersInCategory = async (category: CharacterCategories) => {
 
     for (let i = 0; i < characters.length; i++) {
       const article = document.createElement("article") as HTMLElement;
-      article.id = `${characters[i].id}`;
+      article.id = `Category-${characters[i].id}`;
       article.innerHTML = `Character ${i + 1}: ${characters[i].name}`;
       charactersInCategoryDiv.appendChild(article);
 
-      const characterArticle = document.getElementById(`${characters[i].id}`) as HTMLElement;
+      const characterArticle = document.getElementById(`Category-${characters[i].id}`) as HTMLElement;
 
       const img = document.createElement("img");
       img.src = characters[i].image;
@@ -107,11 +107,11 @@ const DOMCharactersInHouse = async (house: Houses) => {
 
     for (let i = 0; i < characters.length; i++) {
       const article = document.createElement("article") as HTMLElement;
-      article.id = `${characters[i].id}`;
+      article.id = `House-${characters[i].id}`;
       article.innerHTML = `Character ${i + 1}: ${characters[i].name}`;
       charactersInHouseDiv.appendChild(article);
 
-      const characterArticle = document.getElementById(`${characters[i].id}`) as HTMLElement;
+      const characterArticle = document.getElementById(`House-${characters[i].id}`) as HTMLElement;
 
       const img = document.createElement("img");
       img.src = characters[i].image;
@@ -121,5 +121,5 @@ const DOMCharactersInHouse = async (house: Houses) => {
   }
 };
 
-// DOMCharactersInHouse(`gryffindor`);
-DOMCharactersInCategory(`staff`);
+DOMCharactersInHouse(`gryffindor`);
+DOMCharactersInCategory(`students`);
