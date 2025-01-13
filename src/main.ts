@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import { CharacterCategories, Houses, Character } from './types';
 
 const HPBaseurl = `https://hp-api.onrender.com/api`;

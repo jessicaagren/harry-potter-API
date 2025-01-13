@@ -1,0 +1,32 @@
+@mixin flex {
+  display: flex;
+  @content;
+}
+
+body {
+  @include flex() {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  };
+  margin: 0;
+  background-color: midnightblue;
+  color:bisque;
+}
+
+div {
+  @include flex(){
+    flex-wrap: wrap;
+  };
+  gap: 20px;
+  margin: 20px;
+}
+
+article {
+  background-color: lightslategray;
+  gap: 20px;
+  @include flex() {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+}
